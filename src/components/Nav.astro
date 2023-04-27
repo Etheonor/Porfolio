@@ -1,0 +1,36 @@
+---
+import Linkedin from "./UI/Linkedin.astro";
+import Mail from "./UI/Mail.astro";
+import Twitter from "./UI/Twitter.astro";
+---
+
+<nav class="nav">
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/mbreyton/"><Linkedin /></a>
+    <a href="https://www.twitter.com/michael_webdev" target="_blank"
+      ><Twitter /></a
+    >
+    <a href="/contact"><Mail /></a>
+  </div>
+</nav>
+
+<style>
+  .lucide:hover {
+    fill: red;
+    stroke: red;
+  }
+  nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #37dea6;
+    height: 2rem;
+    padding: 0.2rem;
+  }
+  .socials {
+    display: flex;
+    justify-content: space-between;
+    width: 6rem;
+    margin-right: 1rem;
+  }
+</style>

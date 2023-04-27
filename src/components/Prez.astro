@@ -1,0 +1,74 @@
+<div class="block">
+  <div class="text">
+    <p>If you want to create a website, you have to code!</p>
+    <p>
+      It's been my passion for years, and even if I specialised in Javascript, I
+      adapt myself and my work to the needs of my clients.
+    </p>
+    <p>
+      Next.JS, SvelteKit, Node... I have developed several websites with these
+      technologies and I would be happy to do the same for you.
+    </p>
+  </div>
+  <img src="./code.svg" alt="a computer screen" />
+</div>
+
+<div class="block">
+  <div class="text middle">
+    <p>
+      In order to create a website that is both aesthetically pleasing and
+      user-friendly, I work closely with my clients to understand their business
+      goals and target audience.
+    </p>
+    <p>
+      This allows me to design a website that not only looks great, but also
+      functions properly and provides a seamless user experience.
+    </p>
+  </div>
+  <img src="./design.svg" alt="a pot with pen and pencil" />
+</div>
+
+<div class="block">
+  <div class="text">
+    <p>
+      But my goal is not just to create a website that looks good, but one that
+      is also optimized for search engines and mobile devices.
+    </p>
+    <p>
+      By staying up to date with the latest technologies and design trends, I'm
+      able to provide my clients with a website that is modern, responsive, and
+      user-friendly.
+    </p>
+  </div>
+  <img
+    src="./responsive.svg"
+    alt="a computer screen with a phone and a tablet"
+  />
+</div>
+
+<style>
+  .block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 3rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .block img {
+    max-width: 350px;
+  }
+  .block .text {
+    max-width: 30rem;
+    line-height: 2rem;
+    font-size: large;
+    margin: auto 0 auto 0;
+  }
+
+  @media (min-width:830px) {
+    .middle {
+      order: 2;
+    }
+  }
+</style>
