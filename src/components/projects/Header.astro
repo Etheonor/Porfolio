@@ -1,0 +1,78 @@
+<div class="header">
+    <div>
+      <h1>
+        My<br />
+        <span class="name">Projects</span>
+      </h1>
+
+    </div>
+    <object type="image/svg+xml" data="./codeprez.svg" class="codeprez"></object>
+  </div>
+  
+  <style>
+    @media (min-width: 400px) {
+      .header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 30rem;
+        padding: 0 10%;
+      }
+      .header h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+      }
+      .header h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        color: #5c5c5c;
+        margin-top: 2rem;
+      }
+    }
+  
+    @media (max-width: 400px) {
+      .header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        padding: 0 10%;
+      }
+      .header h1 {
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+      }
+      .header h2 {
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        color: #5c5c5c;
+        margin-top: 2rem;
+      }
+    }
+    .header object {
+      width: 400px;
+    }
+    .name {
+      font-weight: bold;
+      background-color: #37dea6;
+      margin-left: 5rem;
+    }
+  
+    .codeprez {
+      width: 100%;
+      max-width: 300px;
+    }
+  </style>
+  

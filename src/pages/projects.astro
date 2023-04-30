@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/projects/Header.astro";
+import Project from "../components/projects/Project.astro";
+import { getCollection, getEntryBySlug } from "astro:content";
+const projects = await getCollection("projects");
+---
+
+<Layout title="My Projects | Michael Breyton">
+  <main>
+    <Header />
+      {projects.map((project) => <Project {...project} />)}
+  </main>
+</Layout>
+
+<style></style>

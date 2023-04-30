@@ -1,0 +1,63 @@
+---
+const { ...project } = Astro.props || "Project";
+
+const { Content, headings } = await project.render();
+---
+
+<div class="project">
+  <div
+    class="project-description"
+    style={project.data.position === "left" ? "order: 2" : null}
+  >
+    <h1>{project.data.title}</h1>
+    <div class="vl"></div>
+    <Content />
+  </div>
+
+  <img src={project.data.image} alt={project.data.description} />
+</div>
+
+<style>
+  .project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto auto 6rem auto;
+    line-height: 1.5rem;
+    padding: 0 1.5rem;
+  }
+  .vl {
+    border-left: 2px solid #000;
+    height: 4rem;
+    margin: auto;
+  }
+  .project-description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: center;
+    max-width: 500px;
+  }
+  .project-description h1 {
+    text-align: center;
+  }
+  .project img {
+    width: 100%;
+    max-width: 450px;
+  }
+    @media (max-width: 997px) {
+        .project {
+        flex-direction: column;
+        }
+        .project-description {
+        order: 1;
+        }
+        .project img {
+        order: 2;
+        margin-top: 2rem;
+        }
+    }
+</style>
