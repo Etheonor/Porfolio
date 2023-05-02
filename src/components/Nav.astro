@@ -5,12 +5,13 @@ import Twitter from "./UI/Twitter.astro";
 ---
 
 <nav class="nav">
+  <a href="/" class="logo">Michael Breyton</a>
   <div class="socials">
     <a href="https://www.linkedin.com/in/mbreyton/"><Linkedin /></a>
     <a href="https://www.twitter.com/michael_webdev" target="_blank"
       ><Twitter /></a
     >
-    <a href="/contact"><Mail /></a>
+    <a href="mailto:mail@michaelbreyton.dev"><Mail /></a>
   </div>
 </nav>
 
@@ -36,4 +37,17 @@ import Twitter from "./UI/Twitter.astro";
     width: 6rem;
     margin-right: 1rem;
   }
+
+  .logo {
+    margin-left: 2rem;
+    margin-right:auto;
+    color: #F6F6F6;
+    font-size: 1rem;
+  text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+  }
+
+  .logo:hover {
+  text-decoration-color: #F6F6F6;
+}
 </style>
