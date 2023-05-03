@@ -2,11 +2,11 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/projects/Header.astro";
 import Project from "../components/projects/Project.astro";
-import { getCollection, getEntryBySlug } from "astro:content";
+import { getCollection } from "astro:content";
 const projects = await getCollection("projects");
 ---
 
-<Layout title="My Projects | Michael Breyton">
+<Layout title="Michael Breyton | My projects">
   <main>
     <Header />
       {projects.map((project) => <Project {...project} />)}
