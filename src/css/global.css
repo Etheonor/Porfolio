@@ -1,7 +1,29 @@
 @font-face {
-  font-family: "Ubuntu";
-  src: url("/fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-family: "Fira Sans";
+  src: url("/fonts/FiraSans-Regular.ttf") format("truetype");
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("/fonts/FiraSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("/fonts/FiraSans-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("/fonts/FiraSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }

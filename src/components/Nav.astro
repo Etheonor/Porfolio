@@ -3,29 +3,34 @@ import Linkedin from "./UI/Linkedin.astro";
 import Mail from "./UI/Mail.astro";
 import Twitter from "./UI/Twitter.astro";
 ---
+
 <header>
-<nav class="nav">
-  <a href="/" class="logo"><img src="./michael.svg" alt="michael" width="100" height="20"></a>
-  <menu class="socials">
-    <a
-      href="https://www.linkedin.com/in/mbreyton/"
-      aria-label="My Linkedin profile"><Linkedin /></a
+  <nav class="nav">
+    <a href="/" class="logo"
+      ><img src="./michael.svg" alt="michael" width="100" height="20" /></a
     >
-    <a
-      href="https://www.twitter.com/michael_webdev"
-      aria-label="My Twitter profile"
-      target="_blank"><Twitter /></a
-    >
-    <a href="mailto:mail@michaelbreyton.dev" aria-label="My email adress"
-      ><Mail /></a
-    >
-  </menu>
-</nav>
+    <menu class="socials">
+      <a
+        href="https://www.linkedin.com/in/mbreyton/"
+        aria-label="My Linkedin profile"><Linkedin /></a
+      >
+      <a
+        href="https://www.twitter.com/michael_webdev"
+        aria-label="My Twitter profile"
+        target="_blank"><Twitter /></a
+      >
+      <a href="mailto:mail@michaelbreyton.dev" aria-label="My email adress"
+        ><Mail /></a
+      >
+    </menu>
+  </nav>
 </header>
 
-
 <style>
-  nav {
+  header {
+    margin-bottom: 3rem;
+  }
+  .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;

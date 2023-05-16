@@ -33,23 +33,33 @@ const { Content, headings } = await project.render();
     border-left: 2px solid #000;
     height: 4rem;
     margin: auto;
+    display: block;
+    width: 1px;
   }
+
   .project-description {
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: left;
     justify-content: center;
     max-width: 500px;
     padding: 25px;
+    max-width: 35rem;
+    line-height: 2rem;
+    font-size: large;
+    margin: auto 0 auto 0;
+    letter-spacing: 0.1rem;
   }
+
   .project-description h1 {
     text-align: center;
   }
+
   .project img {
     width: 100%;
     max-width: 450px;
   }
+
   @media (max-width: 997px) {
     .project {
       flex-direction: column;
