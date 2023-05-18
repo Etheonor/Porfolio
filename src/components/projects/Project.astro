@@ -1,7 +1,7 @@
 ---
 const { ...project } = Astro.props || "Project";
 
-const { Content, headings } = await project.render();
+const { Content } = await project.render();
 ---
 
 <div class="project">
@@ -24,13 +24,12 @@ const { Content, headings } = await project.render();
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    margin: auto auto 8rem auto;
     line-height: 1.4rem;
     padding: 0 1.5rem;
   }
 
   .vl {
-    border-left: 2px solid #000;
+    border-left: 2px solid var(--secondary-color);
     height: 4rem;
     margin: auto;
     display: block;
@@ -38,16 +37,9 @@ const { Content, headings } = await project.render();
   }
 
   .project-description {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: left;
-    justify-content: center;
     max-width: 500px;
-    padding: 25px;
-    max-width: 35rem;
-    line-height: 2rem;
+    line-height: 1.9rem;
     font-size: large;
-    margin: auto 0 auto 0;
     letter-spacing: 0.1rem;
   }
 
@@ -57,10 +49,10 @@ const { Content, headings } = await project.render();
 
   .project img {
     width: 100%;
-    max-width: 450px;
+    max-width: 550px;
   }
 
-  @media (max-width: 997px) {
+  @media (max-width: 1200px) {
     .project {
       flex-direction: column;
     }

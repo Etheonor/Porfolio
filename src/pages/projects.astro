@@ -7,10 +7,33 @@ const projects = await getCollection("projects");
 ---
 
 <Layout title="Michael Breyton | My projects">
-  <main>
+  <div class="container">
     <Header />
+    <div class="projects">
       {projects.map((project) => <Project {...project} />)}
-  </main>
+    </div>
+  </div>
 </Layout>
 
-<style></style>
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 3rem;
+  }
+  @media (min-width: 1200px) {
+    .container {
+      background-image: url(./blobProject.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y: -10vh;
+      gap: 10rem;
+    }
+  }
+</style>
