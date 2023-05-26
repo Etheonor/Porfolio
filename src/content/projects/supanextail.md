@@ -3,6 +3,7 @@ title: "SupaNexTail"
 image: "/supanextail.png"
 description: "SupaNexTail is a SaaS boilerplate"
 position: "left"
+url: "https://www.supanextail.dev"
 ---
 
 SupaNexTail is my first project in Typescript.

@@ -2,6 +2,7 @@
 title: "Travelogue"
 image: "/travelogue.png"
 description: "SupaNexTail is a SaaS boilerplate"
+url: "https://travelogue.vercel.app/"
 ---
 
 Travelogue is my first website made with React (Next.js).

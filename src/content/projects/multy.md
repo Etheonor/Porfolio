@@ -2,6 +2,7 @@
 title: "Multy"
 image: "/multy.png"
 description: "Multy, a tool to share URLs with one short link"
+url: "https://multy.me"
 ---
 
 Multy is a site allowing you to share a list of URLs with a single link.
